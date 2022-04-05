@@ -1,5 +1,0 @@
-git 推送失败：将分支推送到远程存储库时遇到错误: Git failed with a fatal error.
-Git failed with a fatal error.
-unable to access 'https://github.com/SIGEER2222/algorithm2.git/': OpenSSL SSL_read: Connection was reset, errno 10054
-
-解决:git config --global http.sslVerify "false"

@@ -1,0 +1,9 @@
+﻿@page "/"
+@namespace LearnAndTest.Server.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using LearnAndTest.Shared
+@{
+    Layout = "_Layout";
+}
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
