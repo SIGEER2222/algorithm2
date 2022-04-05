@@ -11,4 +11,8 @@
     <Folder Include="新文件夹\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Statics\Statics.csproj" />
+  </ItemGroup>
+
 </Project>
