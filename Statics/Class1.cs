@@ -7,5 +7,6 @@ namespace Statics
     {
         public static void OUT(this object s) => Console.WriteLine(s);
 
+
     }
 }
