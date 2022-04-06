@@ -1,0 +1,25 @@
+﻿@page "/tablelearn"
+<h3>TableLearn</h3>
+
+<Table TItem="UserInfo" 
+Items="@UserInfoList" 
+IsMultipleSelect=true
+AutoGenerateColumns=true 
+ShowToolbar="true"
+
+/>
+
+@code {
+    static readonly Random r = new();
+    static List<UserInfo> GenerateUserInfos()=>new List<UserInfo>(Enumerable.Range(1,10).Select(x=>new UserInfo()
+    {
+        Id = x,
+        Name=$"张三{x:d4}",
+        Address=$"中原工{r.Next(111,666)}寝室",
+        Age=r.Next(20,50),
+        Mobile="10086"+r.Next(1,10000)
+    }));
+    static IEnumerable<UserInfo> UserInfoList { get; } = GenerateUserInfos();
+
+    Task<bool> OnSaveAsync(UserInfo userInfo)=>Task.FromResult(true);
+}

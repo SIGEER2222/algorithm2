@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAndTest.Server", "LearnAndTest.Server\LearnAndTest.Server.csproj", "{C05D628A-B664-4455-82DB-3B6BF4DF42C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnAndTest.Server", "LearnAndTest.Server\LearnAndTest.Server.csproj", "{C05D628A-B664-4455-82DB-3B6BF4DF42C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAndTest.WebAssembly", "LearnAndTest.WebAssembly\LearnAndTest.WebAssembly.csproj", "{4C7AAD01-81D4-4531-B8AD-CA982715B641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnAndTest.WebAssembly", "LearnAndTest.WebAssembly\LearnAndTest.WebAssembly.csproj", "{4C7AAD01-81D4-4531-B8AD-CA982715B641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAndTest.Shared", "LearnAndTest.Shared\LearnAndTest.Shared.csproj", "{384BF48F-4DB1-45DE-B4D2-C5A4F9DF90DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnAndTest.Shared", "LearnAndTest.Shared\LearnAndTest.Shared.csproj", "{384BF48F-4DB1-45DE-B4D2-C5A4F9DF90DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
