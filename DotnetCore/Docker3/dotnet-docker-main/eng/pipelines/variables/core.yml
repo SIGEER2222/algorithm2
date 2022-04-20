@@ -1,0 +1,4 @@
+variables:
+- template: ../../common/templates/variables/dotnet/build-test-publish.yml
+- name: manifest
+  value: manifest.json

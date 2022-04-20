@@ -1,0 +1,49 @@
+#!csharp
+
+FindMax(GetBack());
+void FindMax(int[,] shop)
+{
+    int max = C > D ? C : D;
+    int min = C < D ? C : D;
+    int[,] P = new int[N, max + 1];
+    for (int i = 1; i < N; i++)
+    {
+        int m = shop[i - 1, 0];
+        int v = shop[i - 1, 1];
+        int p = shop[i - 1, 2];
+        for (int c = 1; c <= max; c++)
+        {
+
+            if (m > c || v > c)
+            {
+                P[i, c] = P[i - 1, c];
+
+            }
+
+            else
+            {
+                P[i, c] = (p + P[i - 1, c - m]) >= P[i - 1, c] ? p + P[i - 1, c - m] : P[i - 1, c];
+
+            }
+        }
+    }
+    Console.WriteLine("背包最大能装进" + P[N - 1, max] + "元");
+}
+
+int[,] GetBack()
+{
+    int[] a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+    C = a[0];
+    D = a[1];
+    N = a[2];
+    shop = new int[N, 3];
+    for (int i = 0; i < N; i++)
+    {
+        a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+        for (int j = 0; j < 3; j++)
+        {
+            shop[i, j] = a[j];
+        }
+    }
+    return shop;
+}
