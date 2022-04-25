@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace NET6
 {
-    public class StaticDo
+    public static class StaticDo
     {
+        public static void OUT(this object value) => Console.WriteLine(value);
 
     }
 }
