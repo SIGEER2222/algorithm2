@@ -1,8 +1,4 @@
-﻿
-
-int [] arr = {1,3,4,5};
-foreach ( ref int item in arr.AsSpan())
-{
-    item++;
-}
-Console.WriteLine(String.Join(",", arr));
+﻿using NET6;
+using NET6.算法;
+string s = "1";
+Console.WriteLine(ReferenceEquals(1,1));

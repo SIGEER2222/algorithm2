@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NET6.算法
-{
-    internal class MaxSonArrary
-    {
-        void Test()
-        {
+namespace NET6.算法 {
+    internal class MaxSonArrary {
+        void Test() {
 
         }
 
