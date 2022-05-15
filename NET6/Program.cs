@@ -1,4 +1,8 @@
 ﻿using NET6;
 using NET6.算法;
-string s = "1";
-Console.WriteLine(ReferenceEquals(1,1));
+
+string[] strings = { "Plase", "sort", "the", "String", "in" };
+Array.Sort(strings) ;
+foreach (var item in strings) {
+    Console.WriteLine(  item);
+}
